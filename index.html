@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Quake 4 Timing Trainer</title>
+        <script src="timer.js"></script>
+        <style>
+            #sub {
+                clear: both;
+                
+                margin-top: 50px;
+            }
+            #questionAmount {
+                
+            }
+            #which {
+                margin-top: 20px;
+                
+
+            }
+            #which2 {
+                margin-top: 25px;
+                
+            }
+            html {
+                font-family:Arial;
+                font-size:18px;
+            }
+
+            body {
+                background:#000000;
+                color: #fff;
+            }
+
+            #cont {
+                padding:40px;
+                background:#000000;
+                /*color:#fff;*/
+                width:700px;
+                margin:20px auto;
+                border-top: 4px solid #fff;
+                border-bottom: 4px solid #fff;
+                border-left: 4px solid #fff;
+                border-right: 4px solid #fff;
+                border-radius: 4px;
+            }
+            
+            #runningscore {
+                margin-bottom:10px;
+                font-size:20px;
+            }
+
+            input[type=number] {
+                padding:10px 10px;
+                font-size:20px;
+                border:solid 1px black;
+                margin:10px;
+                width:70px;
+            }
+
+            .time {
+                font-size:60px;
+                font-weight:400;
+            }
+
+            table.res {
+                border-collapse:collapse;
+            }
+            
+            table.res th {
+                text-align:left;
+                padding-right:20px;
+            }
+            table.res td {
+                padding-right:20px;
+            }
+
+            table.res .summary td { border-top:1px solid #fff; }
+            
+            .questionrow {
+                display:flex;
+                align-items:center;
+            }
+            .questionrow > * {
+                margin-right:20px;
+            }
+            .questionrow button { padding:10px 20px; font-size:16px; }
+
+            #timeres {
+                margin:20px 0 6px 0;
+            }
+            .yay,
+            .nay { 
+                padding:4px 10px; 
+                display:inline-block;
+                font-weight:700;
+                border-radius:2px;
+                color:#fff;
+            }
+
+            .yay {
+                background-color:#00ff0d;
+            }
+            .nay {
+                background-color:#ff0000;
+            }
+
+            .endscore {
+                font-size:26px;
+                font-weight:700;
+            }
+                
+            #startButton,
+            #restartButton,
+            #submitAnswer {
+                margin-top:10px;
+                padding:4px 14px;
+               
+            }
+            #logo {
+                width:400px;
+                text-align:center;
+                margin:40px auto 10px auto;
+                background:#fff;
+                color:#000;
+                padding:10px;
+                border-radius:4px;
+                font-weight:700;
+                font-size:20px;
+            }
+            #logo img {
+                margin-bottom:10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="logo">
+            <div>Quake 4 Timing Trainer</div>
+        </div>
+        <div id="cont">
+            <form>
+                
+                    <div id="which2">
+                    <div>How many item times?</div>
+                    <div><input id="questionAmount" type="number" min="1" max="100" value="10"></div>
+                    <div>Which items?</div>
+                    <div><label><input type="checkbox" class="itemcb" value="mega"> Mega Health (35s)</label></div>
+                    <div><label><input type="checkbox" class="itemcb" value="heavy" checked> Armor (25s)</label></div>
+                    </div>
+            <div id="sub"><button type="submit" id="startButton">Start</button></form></div></div>
+    
+    </body>
+</html>
